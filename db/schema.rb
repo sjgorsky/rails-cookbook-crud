@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2021_10_22_154352) do
     t.string "title"
     t.string "author"
     t.string "cuisine"
-    t.integer "publishes"
+    t.integer "year"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

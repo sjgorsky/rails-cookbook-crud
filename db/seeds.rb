@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-CookbookCollections.create(title: 'The French Laundry', author: 'Thomas Keller', cuisine: 'American', year: 2000)
-CookbookCollections.create(title: 'Jerusalem', author: 'Yotam Ottolenghi', cuisine: 'Israeli', year: 2012)
-CookbookCollections.create(title: 'On Food and Cooking', author: 'Harold McGee', cuisine: 'General', year: 1984)
-CookbookCollections.create(title: 'The Food Lab', author: 'J. Kenji Lopez-Alt', cuisine: 'General', year: 2015)
+CookbookCollection.create(title: 'The French Laundry', author: 'Thomas Keller', cuisine: 'American', year: 2000)
+CookbookCollection.create(title: 'Jerusalem', author: 'Yotam Ottolenghi', cuisine: 'Israeli', year: 2012)
+CookbookCollection.create(title: 'On Food and Cooking', author: 'Harold McGee', cuisine: 'General', year: 1984)
+CookbookCollection.create(title: 'The Food Lab', author: 'J. Kenji Lopez-Alt', cuisine: 'General', year: 2015)
