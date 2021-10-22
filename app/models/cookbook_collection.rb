@@ -1,0 +1,2 @@
+class CookbookCollection < ApplicationRecord
+end

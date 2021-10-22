@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_21_021036) do
+ActiveRecord::Schema.define(version: 2021_10_22_154352) do
+
+  create_table "cookbook_collections", force: :cascade do |t|
+    t.string "title"
+    t.string "author"
+    t.string "cuisine"
+    t.integer "publishes"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "cookbooks", force: :cascade do |t|
     t.string "title"

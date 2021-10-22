@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cookbook Collections</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Cuisine</th>
+      <th>Publishes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cookbook_collections.each do |cookbook_collection| %>
+      <tr>
+        <td><%= cookbook_collection.title %></td>
+        <td><%= cookbook_collection.author %></td>
+        <td><%= cookbook_collection.cuisine %></td>
+        <td><%= cookbook_collection.publishes %></td>
+        <td><%= link_to 'Show', cookbook_collection %></td>
+        <td><%= link_to 'Edit', edit_cookbook_collection_path(cookbook_collection) %></td>
+        <td><%= link_to 'Destroy', cookbook_collection, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cookbook Collection', new_cookbook_collection_path %>
