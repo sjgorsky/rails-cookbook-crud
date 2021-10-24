@@ -18,6 +18,7 @@ class Api::V1::CookbookCollectionsController < ApplicationController
         end
     end
 
+<<<<<<< HEAD
     #GET /cookbook_collections/new
     def new
         @cookbook_collection = CookbookCollection.new
@@ -61,5 +62,7 @@ class Api::V1::CookbookCollectionsController < ApplicationController
     def cookbook_params
         params.permit(:title, :author, :cuisine, :year)
     end
+=======
+>>>>>>> 876ed4ed19e6347e9e62f14a920822c08c6d91eb
 
 end
